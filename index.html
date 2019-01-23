@@ -16,11 +16,7 @@ $(document).ready(function() {
             return vars;
         }
         vars = getUrlVars()
-        if (vars.region) {
-            region = vars.region
-        } else {
-            region = "GB"
-        }
+
 	product=vars.product
         if (vars) {
                $("input[name=sku]").val(vars.SKU);
